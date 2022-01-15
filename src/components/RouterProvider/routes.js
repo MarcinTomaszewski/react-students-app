@@ -8,27 +8,22 @@ const routes = [
   {
     path: "/",
     component: <HomePage />,
-    exact: true,
   },
   {
     path: "/projects",
     component: <ProjectsPage />,
-    exact: true,
   },
   {
     path: "/skills",
     component: <SkillsPage />,
-    exact: true,
   },
   {
     path: "/students",
     component: <StudentsPage />,
-    exact: true,
   },
   {
     path: "/error",
     component: <ErrorPage />,
-    exact: true,
   },
 ];
 

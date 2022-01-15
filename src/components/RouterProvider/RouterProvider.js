@@ -6,12 +6,7 @@ function RouterProvider() {
   return (
     <Routes>
       {routes.map((route, index) => (
-        <Route
-          path={route.path}
-          element={route.component}
-          exact={route.exact}
-          key={index}
-        />
+        <Route path={route.path} element={route.component} key={index} />
       ))}
     </Routes>
   );
