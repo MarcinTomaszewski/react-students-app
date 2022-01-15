@@ -1,0 +1,12 @@
+.footer {
+  height: 60px;
+  background-color: rgb(236, 234, 234);
+  display: flex;
+  justify-content: center;
+  /* border-top: solid 2px $main-color-green; */
+}
+
+.footer__link {
+  font-size: 0.8rem;
+  margin: auto;
+}

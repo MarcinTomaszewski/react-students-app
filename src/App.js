@@ -1,19 +1,16 @@
-import { Link } from "react-router-dom";
-import "./App.css";
 import RouterProvider from "./components/RouterProvider/RouterProvider";
+import NavBar from "./components/layout/navigation/NavBar/NavBar";
+import Footer from "./components/layout/footer/Footer";
+import styles from "./App.module.css";
 
-function App({ routes }) {
+function App() {
   return (
-    <div>
-      <h1>Students App</h1>
-      <Link to="/">Home</Link>
-      <Link to="/students">Students</Link>
-      <Link to="/projects">Projects</Link>
-      <Link to="/skills">Skills</Link>
-      <Link to="/error">Error</Link>
-      <div>
+    <div className={styles.app__wrapper}>
+      <NavBar />
+      <div className={styles.page__wrapper}>
         <RouterProvider />
       </div>
+      <Footer />
     </div>
   );
 }
